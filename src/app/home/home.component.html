@@ -1,0 +1,186 @@
+
+<mat-toolbar class="TolBAR" color="warn">
+  <mat-icon fontIcon="store"></mat-icon>
+  <span>LolJia LTDA</span>
+  <div class="ButtonPosi">
+    <button routerLink="/Entrar" mat-button color="accent-grey">
+     <mat-icon fontIcon="login"></mat-icon>
+     <span>Entrar</span>
+    </button>
+    <button routerLink="/cadastro" mat-button color="accent-grey">
+     <mat-icon fontIcon="app_registration"></mat-icon>
+     <span style="width: 60%;">Cadastro</span>
+    </button>
+    <div class="PosiShearch">
+   
+    </div>
+  </div>
+
+  <form mat-form class="d-flex" role="search">
+    
+    <input class="form-control me-2" type="search" placeholder="Oque Está Procurando" aria-label="Search" style="width: 100%;">
+    <button mat-button color="accent-grey" type="submit">Pesquisar</button>
+  
+ </form>
+  
+</mat-toolbar>
+<div>
+  <p class="ColorletraCat">
+    <mat-icon color="accent-grey" fontIcon="lists"></mat-icon>
+    <span class="PosiLetra">Categorias</span>
+  </p>
+  <ul class="ListaCatPosi">
+    <hr class="HrTamanho">
+    
+    <button mat-button color="primary" routerLink="MeSinu">Capas Para Mesa de Sinuca</button><br>
+    <button mat-button color="primary" routerLink="QuadroDec">Quadros decorativos</button><br>
+    <hr class="HrTamanho">
+  </ul>
+
+</div>
+
+<div class="Carrosel">
+
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://images2.imgbox.com/08/17/Z4S4Ayr1_o.jpeg"  class="d-block w-100 " alt="...">
+        <div class="carousel-caption d-none d-md-block" >
+          <h5 style="font-size: large; font-family: 'Ojuju', sans-serif;">Cortina Azul Marinho</h5>
+          <p style="color: rgb(20, 255, 20); font-size: medium;">69,93$</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://images2.imgbox.com/22/34/DyxBcLI4_o.jpeg"   class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="font-size: large; font-family: 'Ojuju', sans-serif;">Cortina Oxford Verde Turquesa</h5>
+          <p style="color: rgb(20, 255, 20); font-size: medium;">69,92$</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://images2.imgbox.com/78/62/b5PR5rCC_o.jpeg"  class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="font-size: large; font-family: 'Ojuju', sans-serif;">Quadro Decorativo Homens Aranhas</h5>
+          <p style="color: rgb(20, 255, 20); font-size: medium;">44,99$</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<div class="container">
+  <router-outlet></router-outlet>
+
+  <button routerLink="AnuCompra" class="card d-inline-block mx-2 mb-3" style="width: 18rem;">
+      <img src="https://images2.imgbox.com/df/47/EGgExV83_o.jpg" class="card-img-top" width="100" height="200">
+      <div class="card-body">
+        <h5 class="card-title" style="font-size: 20px;">Capa Para Mesa de Sinuca</h5>
+        <p class="card-text" style="font-size: 17px; color: green;">100$</p>
+      </div>
+  </button>
+
+  <button routerLink="AnuCompra"  class="card d-inline-block mx-2 mb-3" style="width: 18rem;">
+    <img src="https://images2.imgbox.com/df/47/EGgExV83_o.jpg" class="card-img-top" width="100" height="200">
+    <div class="card-body">
+      <h5 class="card-title" style="font-size: 20px;">Capa Para Mesa de Sinuca</h5>
+      <p class="card-text" style="font-size: 17px; color: green;">100$</p>
+    </div>
+  </button>
+
+  <button routerLink="AnuCompra"  class="card d-inline-block mx-2 mb-3" style="width: 18rem;">
+    <img src="https://images2.imgbox.com/df/47/EGgExV83_o.jpg" class="card-img-top" width="100" height="200">
+    <div class="card-body">
+      <h5 class="card-title" style="font-size: 20px;">Capa Para Mesa de sinuca</h5>
+      <p class="card-text" style="font-size: 17px; color: green;">100$</p>
+    </div>
+  </button>
+
+  <button routerLink="AnuCompra"  class="card d-inline-block mx-2 mb-3" style="width: 18rem;">
+    <img src="https://images2.imgbox.com/df/47/EGgExV83_o.jpg" class="card-img-top" width="100" height="200">
+    <div class="card-body">
+      <h5 class="card-title" style="font-size: 20px;">Capa Para Mesa de Sinuca</h5>
+      <p class="card-text" style="font-size: 17px; color: green;">100$</p>
+    </div>
+  </button>
+
+  <button routerLink="AnuCompra"  class="card d-inline-block mx-2 mb-3" style="width: 18rem;">
+    <img src="https://images2.imgbox.com/d0/74/Vrp91ZIx_o.jpeg" class="card-img-top" width="100" height="200">
+    <div class="card-body">
+      <h5 class="card-title" style="font-size: 20px;">Cortinas Para Sala e Escrtorio</h5>
+      <p class="card-text" style="font-size: 17px; color: green;">45,99$</p>
+    </div>
+  </button>
+
+  <button routerLink="AnuCompra"  class="card d-inline-block mx-2 mb-3" style="width: 18rem;">
+    <img src="https://images2.imgbox.com/d0/74/Vrp91ZIx_o.jpeg" class="card-img-top" width="100" height="200">
+    <div class="card-body">
+      <h5 class="card-title" style="font-size: 20px;">Cortinas Para Sala e Escrtorio</h5>
+      <p class="card-text" style="font-size: 17px; color: green;">45,99$</p>
+    </div>
+  </button>
+
+  <button routerLink="AnuCompra"  class="card d-inline-block mx-2 mb-3" style="width: 18rem;">
+    <img src="https://images2.imgbox.com/d0/74/Vrp91ZIx_o.jpeg" class="card-img-top" width="100" height="200">
+    <div class="card-body">
+      <h5 class="card-title" style="font-size: 20px;">Cortinas Para Sala e Escrtorio</h5>
+      <p class="card-text" style="font-size: 17px; color: green;">45,99$</p>
+    </div>
+  </button>
+
+  <button routerLink="AnuCompra"  class="card d-inline-block mx-2 mb-3" style="width: 18rem;">
+    <img src="https://images2.imgbox.com/d0/74/Vrp91ZIx_o.jpeg" class="card-img-top" width="100" height="200">
+    <div class="card-body">
+      <h5 class="card-title" style="font-size: 20px;">Cortinas Para Sala e Escrtorio</h5>
+      <p class="card-text" style="font-size: 17px; color: green;">45,99$</p>
+    </div>
+  </button>
+
+  <button routerLink="AnuCompra"  class="card d-inline-block mx-2 mb-3" style="width: 18rem;">
+    <img src="https://images2.imgbox.com/44/5a/yAQhkXNE_o.jpeg" class="card-img-top" width="100" height="200">
+    <div class="card-body">
+      <h5 class="card-title" style="font-size: 20px;">Quadro Decorativos Arvore Florida</h5>
+      <p class="card-text" style="font-size: 17px; color: green;">39,99$</p>
+    </div>
+  </button>
+
+  <button routerLink="AnuCompra"  class="card d-inline-block mx-2 mb-3" style="width: 18rem;">
+    <img src="https://images2.imgbox.com/14/7a/W37cd26l_o.jpeg" class="card-img-top" width="100" height="200">
+    <div class="card-body">
+      <h5 class="card-title" style="font-size: 20px;">Quadro Decorativo Arte Abstrata</h5>
+      <p class="card-text" style="font-size: 17px; color: green;">39,99$</p>
+    </div>
+  </button>
+
+  <button routerLink="AnuCompra"  class="card d-inline-block mx-2 mb-3" style="width: 18rem;">
+    <img src="https://images2.imgbox.com/7a/ab/kswQIqy8_o.jpeg" class="card-img-top" width="100" height="200">
+    <div class="card-body">
+      <h5 class="card-title" style="font-size: 20px;">Quadro Decorativo Arte Rua</h5>
+      <p class="card-text" style="font-size: 17px; color: green;">39,99$</p>
+    </div>
+  </button>
+
+  <button routerLink="AnuCompra"  class="card d-inline-block mx-2 mb-3" style="width: 18rem;">
+    <img src="https://images2.imgbox.com/0f/fe/72S8JCB5_o.jpeg" class="card-img-top" width="100" height="200">
+    <div class="card-body">
+      <h5 class="card-title" style="font-size: 20px;">Quadro Decorativo Familia feliz</h5>
+      <p class="card-text" style="font-size: 17px; color: green;">39,99$</p>
+    </div>
+  </button>
+  
+
+
+</div>
+

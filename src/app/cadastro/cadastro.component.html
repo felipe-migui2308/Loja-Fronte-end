@@ -1,0 +1,68 @@
+<mat-toolbar class="TolBAR" color="warn">
+  <button mat-button class="ButtonBack" (click)="GoBack()">
+  <mat-icon  fontIcon="store"></mat-icon>
+  <span style="font-size: 20px;">L.N.N Loja</span>
+  </button>
+</mat-toolbar>
+
+
+<div class="CadatroN">
+  <br>
+  <br>
+  <h1 style="text-align: center;">Cadastro</h1>
+    <form [formGroup]="CadastroForm" style="text-align: center;">
+      <div>
+        <mat-form-field class="example-container">
+          <mat-label>Digite seu Nome</mat-label>
+          <input matInput formControlName="name">
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field class="example-container" >
+          <mat-label>Seu Sobrenome</mat-label>
+          <input matInput formControlName="sobrenome">
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field class="example-container">
+          <mat-label>CPF</mat-label>
+          <input matInput formControlName="cpf">
+        </mat-form-field>
+      </div>
+      
+      <div>
+        <mat-form-field class="example-container">
+          <mat-label>Data de Nascimento</mat-label>
+          <input matInput [matDatepicker]="picker" formControlName="data">
+          <mat-hint>MM/DD/YYYY</mat-hint>
+          <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field class="example-container">
+            <mat-label>Digite seu Email</mat-label>
+            <input matInput placeholder="novousuario@gmail.com" formControlName="email">
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field class="example-container">
+          <mat-label>Crie uma Senha</mat-label>
+          <input matInput formControlName="senha">
+        </mat-form-field>
+      </div>
+      <div>
+        <button mat-button class="buttonSave">
+          <mat-icon fontIcon="save"></mat-icon>
+          <span>Salvar</span>
+        </button>
+      </div>
+    </form>
+</div>
+
+      
+

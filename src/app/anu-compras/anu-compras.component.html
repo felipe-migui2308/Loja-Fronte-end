@@ -1,0 +1,24 @@
+<mat-toolbar class="TolBAR" color="warn">
+    <mat-icon fontIcon="store"></mat-icon>
+    <span>LolJia LTDA</span>
+    
+      
+      <div class="PosiShearch">
+     
+      </div>
+</mat-toolbar>   
+
+<div class="cardCompra">
+    <div *ngFor="let anuncio of anuncios">
+        <img src= "Exempolo Img" lt="" class="ImgAnu">
+        <h5 class="titlePrinci">Exemplo Titulo</h5>
+        <div class="DescAnun">
+            <p>Exemplo Descrição</p>
+        </div>
+        <p class="PosiPreco">$$$$$</p>
+        <div class="PosicaoButton">
+            <button mat-button style="background: orangered;">Comprar</button>
+            <button mat-button>Adicionar ao Carrinho</button>
+        </div>
+    </div>
+</div>
